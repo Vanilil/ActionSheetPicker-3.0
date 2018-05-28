@@ -116,7 +116,7 @@ CG_INLINE BOOL isIPhone4() {
 
 - (id)storedOrigin;
 
-- (UIToolbar *)createPickerToolbarWithTitle:(NSString *)aTitle;
+- (ASPToolbar *)createPickerToolbarWithTitle:(NSString *)aTitle;
 
 - (UIBarButtonItem *)createButtonWithType:(UIBarButtonSystemItem)type target:(id)target action:(SEL)buttonAction;
 
@@ -249,9 +249,9 @@ CG_INLINE BOOL isIPhone4() {
     //ios7 picker draws a darkened alpha-only region on the first and last 8 pixels horizontally, but blurs the rest of its background.  To make the whole popup appear to be edge-to-edge, we have to add blurring to the remaining left and right edges.
     if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
         CGRect rect = CGRectMake(0, self.toolbar.frame.origin.y, _borderWidth, masterView.frame.size.height - self.toolbar.frame.origin.y);
-        UIToolbar *leftEdge = [[UIToolbar alloc] initWithFrame:rect];
+        ASPToolbar *leftEdge = [[ASPToolbar alloc] initWithFrame:rect];
         rect.origin.x = masterView.frame.size.width - _borderWidth;
-        UIToolbar *rightEdge = [[UIToolbar alloc] initWithFrame:rect];
+        ASPToolbar *rightEdge = [[ASPToolbar alloc] initWithFrame:rect];
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "UnavailableInDeploymentTarget"
         leftEdge.barTintColor = rightEdge.barTintColor = self.toolbar.barTintColor;
@@ -468,9 +468,9 @@ CG_INLINE BOOL isIPhone4() {
 }
 
 
-- (UIToolbar *)createPickerToolbarWithTitle:(NSString *)title {
+- (ASPToolbar *)createPickerToolbarWithTitle:(NSString *)title {
     CGRect frame = CGRectMake(0, 0, self.viewSize.width, 44);
-    UIToolbar *pickerToolbar = [[UIToolbar alloc] initWithFrame:frame];
+    ASPToolbar *pickerToolbar = [[ASPToolbar alloc] initWithFrame:frame];
     pickerToolbar.barStyle = (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) ? UIBarStyleDefault : UIBarStyleBlackTranslucent;
 
     pickerToolbar.barTintColor = self.toolbarBackgroundColor;

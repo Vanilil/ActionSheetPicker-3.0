@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173AF73020BC452A00B5CDE1 /* ASPToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 173AF72F20BC452A00B5CDE1 /* ASPToolbar.m */; };
 		1C6EE71A192BB41600A27994 /* ActionSheetPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6EE70B192BB41600A27994 /* ActionSheetPickerAppDelegate.m */; };
 		1C6EE71B192BB41600A27994 /* ActionSheetPickerCustomPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6EE70D192BB41600A27994 /* ActionSheetPickerCustomPickerDelegate.m */; };
 		1C6EE71C192BB41600A27994 /* OldActionSheetPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6EE70F192BB41600A27994 /* OldActionSheetPickerViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		173AF72E20BC452A00B5CDE1 /* ASPToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPToolbar.h; sourceTree = "<group>"; };
+		173AF72F20BC452A00B5CDE1 /* ASPToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPToolbar.m; sourceTree = "<group>"; };
 		1C6EE70A192BB41600A27994 /* ActionSheetPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerAppDelegate.h; sourceTree = "<group>"; };
 		1C6EE70B192BB41600A27994 /* ActionSheetPickerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerAppDelegate.m; sourceTree = "<group>"; };
 		1C6EE70C192BB41600A27994 /* ActionSheetPickerCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerCustomPickerDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				D66F5547FC9E0F428DA62D5C /* SWActionSheet.m */,
 				D66F5B444F4BC38CB3FFAAA7 /* ActionSheetLocalePicker.h */,
 				D66F5FA2442AF8D0CA4E38C9 /* ActionSheetLocalePicker.m */,
+				173AF72E20BC452A00B5CDE1 /* ASPToolbar.h */,
+				173AF72F20BC452A00B5CDE1 /* ASPToolbar.m */,
 			);
 			name = Pickers;
 			path = ../../Pickers;
@@ -290,6 +295,7 @@
 				1C6EE739192BB4F600A27994 /* DistancePickerView.m in Sources */,
 				D66F5832537A4862C9F19770 /* TestTableViewController.m in Sources */,
 				D66F5E7C0C7E16F9D7CA5748 /* SWActionSheet.m in Sources */,
+				173AF73020BC452A00B5CDE1 /* ASPToolbar.m in Sources */,
 				D66F591A4CAC63A7A1058C13 /* ActionSheetLocalePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

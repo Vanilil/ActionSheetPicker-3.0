@@ -28,6 +28,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "ASPToolbar.h"
+
 @class SWActionSheet;
 
 #define SuppressPerformSelectorLeakWarning(Stuff) \
@@ -65,7 +67,7 @@ static NSString *const kActionTarget = @"buttonActionTarget";
 @property (nonatomic) UIWindowLevel windowLevel;
 @property(nonatomic, assign) NSInteger tag;
 @property(nonatomic, assign) int borderWidth;
-@property(nonatomic, strong) UIToolbar *toolbar;
+@property(nonatomic, strong) ASPToolbar *toolbar;
 @property(nonatomic, copy) NSString *title;
 @property(nonatomic, strong) UIView *pickerView;
 @property(nonatomic, readonly) CGSize viewSize;
